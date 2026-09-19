@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>لوحة إدارة مركز بداية</title>
-  <style>
-    body { font-family: system-ui, sans-serif; margin: 0; background: #f1f5f9; direction: rtl; }
-    .layout { display: flex; min-height: 100vh; }
-    .sidebar { width: 250px; background: #0f172a; color: white; padding: 20px; box-sizing: border-box; }
-    .menu-item { display: block; color: white; text-decoration: none; padding: 10px; margin-bottom: 8px; border-radius: 6px; background: #1e293b; font-size: 14px; }
-    .main { flex: 1; padding: 30px; }
-    .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - مركز بداية</title>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; background: #eceff1; margin: 0; padding: 20px; direction: rtl; text-align: right; }
+        .admin-card { max-width: 900px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h2 { color: #1b5e20; border-bottom: 2px solid #2e7d32; padding-bottom: 10px; }
+        .stats { display: flex; gap: 15px; margin-top: 20px; }
+        .box { flex: 1; background: #e8f5e9; padding: 20px; border-radius: 8px; text-align: center; font-weight: bold; color: #2e7d32; }
+        .btn { display: inline-block; margin-top: 20px; padding: 10px 15px; background: #2e7d32; color: white; border-radius: 5px; text-decoration: none; }
+    </style>
 </head>
 <body>
-  <div class="layout">
-    <div class="sidebar">
-      <h2>⚙️ لوحة التحكم</h2>
-      <a href="#headers" class="menu-item">🖼️ إدارة رؤوس الصفحات</a>
-      <a href="/index.html" class="menu-item" style="background:#2563eb;">🌐 العودة للموقع</a>
+    <div class="admin-card">
+        <h2>🛠️ لوحة إدارة مركز بداية</h2>
+        <p>مرحباً بك في نظام إدارة البيانات وتقارير الأطفال والأخصائيين.</p>
+        <div class="stats">
+            <div class="box">الأطفال المسجلون</div>
+            <div class="box">تقارير الفحص الذاتي</div>
+        </div>
+        <a href="../index.html" class="btn">الذهاب للموقع الرئيسي</a>
     </div>
-    <div class="main">
-      <div class="card">
-        <h3>مرحباً بك في لوحة تحكم مركز بداية</h3>
-        <p>يمكنك من هنا متابعة الاستجابات وتحديث بيانات ورؤوس صفحات الموقع.</p>
-      </div>
-    </div>
-  </div>
 </body>
 </html>
