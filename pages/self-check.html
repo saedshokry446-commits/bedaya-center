@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الفحص الذاتي لتطور الطفل - مركز بداية</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; padding: 20px; background: #f8fafc; color: #1e293b; direction: rtl; }
+    .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    h2 { color: #1e3a8a; }
+    .form-group { margin-bottom: 15px; }
+    label { display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px; }
+    input, select, textarea { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; }
+    .btn { background: #f59e0b; color: #0f172a; border: none; padding: 12px 20px; font-size: 16px; font-weight: bold; border-radius: 8px; cursor: pointer; width: 100%; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>📋 نموذج الفحص الذاتي لتطور الطفل</h2>
+    <p style="font-size: 14px; color: #64748b;">قم بتعبئة بيانات الطفل والتوجه لتحديد الاحتياجات التأهيلية المناسبة:</p>
+    <form id="checkForm">
+      <div class="form-group">
+        <label>اسم ولي الأمر:</label>
+        <input type="text" id="parentName" required placeholder="أدخل اسمك الكريم">
+      </div>
+      <div class="form-group">
+        <label>رقم الهاتف / الواتساب:</label>
+
+        <input type="tel" id="phone" required placeholder="09xxxxxxx">
+      </div>
+      <div class="form-group">
+        <label>عمر الطفل (بالسنوات):</label>
+        <input type="number" id="childAge" min="1" max="15" required placeholder="مثال: 4">
+      </div>
+      <div class="form-group">
+        <label>الفرع الأقرب لكم:</label>
+        <select id="branch">
+          <option value="بنغازي">فرع بنغازي</option>
+          <option value="البيضاء">فرع البيضاء</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>ملاحظات حول النطق أو السلوك:</label>
+        <textarea id="notes" rows="3" placeholder="اذكر بعض التحديات التي تلاحظها على الطفل..."></textarea>
+      </div>
+      <button type="submit" class="btn">إرسال الفحص الذاتي</button>
+    </form>
+  </div>
+</body>
+</html>
