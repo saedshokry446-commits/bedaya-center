@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مركز بداية للتخاطب وتأهيل ذوي الاحتياجات الخاصة</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#2B6CB0">
+  <style>
+    :root { --primary: #1e3a8a; --accent: #f59e0b; --bg: #f8fafc; }
+    body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; background-color: var(--bg); color: #1e293b; direction: rtl; }
+    header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.08); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+    nav a { margin: 0 8px; color: #475569; text-decoration: none; font-weight: 500; font-size: 14px; }
+    nav a:hover { color: var(--primary); font-weight: bold; }
+    .hero { background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: white; padding: 4rem 2rem; text-align: center; }
+    .btn { background: var(--accent); color: #0f172a; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-block; margin: 5px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; padding: 3rem 2rem; max-width: 1200px; margin: 0 auto; }
+    .card { background: white; padding: 1.5rem; border-radius: 12px; border-top: 4px solid var(--primary); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    footer { background: #0f172a; color: #94a3b8; padding: 2rem; margin-top: auto; font-size: 14px; text-align: center; }
+    .wa-float { position: fixed; bottom: 20px; right: 20px; z-index: 1000; }
+    .wa-btn { background: #22c55e; color: white; border: none; border-radius: 50%; width: 56px; height: 56px; font-size: 24px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+    .wa-menu { display: none; position: absolute; bottom: 70px; right: 0; background: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); padding: 15px; width: 250px; text-align: right; }
+    .wa-menu.active { display: block; }
+    .wa-link { display: block; background: #22c55e; color: white; text-decoration: none; padding: 8px 12px; border-radius: 6px; margin-top: 8px; font-size: 13px; font-weight: bold; }
+    .social-float { position: fixed; bottom: 20px; left: 20px; z-index: 1000; display: flex; flex-direction: column; gap: 10px; }
+    .social-btn { width: 44px; height: 44px; border-radius: 50%; color: white; display: flex; align-items: center; justify-content: center; text-decoration: none; font-weight: bold; }
+    .fb { background: #1877f2; } .ig { background: #e1306c; } .map { background: #dc2626; }
+    .header-banner-slot { width: 100%; min-height: 120px; background: #e2e8f0; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .header-banner-slot img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- مساحة الهيدر الحر المتغير لصور الصفحة -->
+  <div id="dynamic-header-container" class="header-banner-slot">
+    <span style="color:#64748b; font-size:13px;">مساحة هيدر الصفحة (صورة حرة يتم تحميلها من لوحة التحكم)</span>
+  </div>
+
+  <header>
+    <div>
+      <h1 style="margin:0; font-size: 1.25rem; color: var(--primary);">مركز بداية</h1>
+      <small style="color:#64748b;">للتخاطب وتأهيل ذوي الاحتياجات الخاصة</small>
+    </div>
+    <nav>
+      <a href="/index.html">الرئيسية</a>
+      <a href="/pages/about.html">من نحن</a>
+      <a href="/pages/services.html">برامجنا</a>
+      <a href="/pages/team.html">فريق العمل</a>
+      <a href="/pages/self-check.html">الفحص الذاتي</a>
+      <a href="/pages/blog.html">المدونة</a>
+      <a href="/pages/gallery.html">المعرض</a>
+      <a href="/pages/testimonials.html">آراء الأولياء</a>
+      <a href="/pages/faq.html">الأسئلة الشائعة</a>
+      <a href="/pages/parents-resources.html">موارد الأسرة</a>
+      <a href="/pages/branches.html">فروعنا</a>
+      <a href="/pages/contact.html">تواصل معنا</a>
+    </nav>
+    <a href="/admin/login.html" style="text-decoration:none; background:#eff6ff; color:#1d4ed8; padding:6px 12px; border-radius:6px; font-size:13px; font-weight:bold;">لوحة التحكم</a>
+  </header>
+
+  <div class="hero">
+    <span style="background:#fef08a; color:#854d0e; padding:4px 12px; border-radius:20px; font-size:12px; font-weight:bold;">تطبيق مبادئ تحليل السلوك التطبيقي (ABA)</span>
+    <h1 style="font-size:2.2rem; margin:1rem 0;">خطوة بخطوة نحو مستقبل أفضل لأطفالنا</h1>
+    <p style="font-size: 1.1rem; max-width: 650px; margin: 0 auto 2rem; color: #e0e7ff;">نقدم أحدث البرامج العلاجية والتربوية للتخاطب والتأهيل الشامل بفرعينا في بنغازي والبيضاء تحت إشراف نخبة من الأخصائيين المعتمدين.</p>
+    <a href="/pages/self-check.html" class="btn">ابدأ الفحص الذاتي لتطور طفلك</a>
+    <a href="/pages/services.html" class="btn" style="background:white; color:#1e3a8a;">استكشف البرامج والمناهج</a>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3 style="color:var(--primary); margin-top:0;">برنامج VB-MAPP</h3>
+      <p style="font-size:14px; color:#475569;">تقييم وتنمية مهارات اللغة والتواصل والتفاعل الاجتماعي وتحديد أهداف تدريبية مناسبة لمستوى الطفل.</p>
+    </div>
+    <div class="card">
+      <h3 style="color:var(--primary); margin-top:0;">نموذج Denver للتدخل المبكر</h3>
+      <p style="font-size:14px; color:#475569;">تنمية اللغة والتواصل واللعب والتقليد والتفاعل الاجتماعي والمهارات الحركية عبر أنشطة تفاعلية.</p>
+    </div>
+    <div class="card">
+      <h3 style="color:var(--primary); margin-top:0;">تقييم ABLLS-R الشامل</h3>
+      <p style="font-size:14px; color:#475569;">تقييم مهارات اللغة والتواصل والتعلم والمهارات الاجتماعية والاستقلالية والمهارات الوظيفية.</p>
+    </div>
+    <div class="card">
+      <h3 style="color:var(--primary); margin-top:0;">تنمية العلاقات والتواصل RDI</h3>
+      <p style="font-size:14px; color:#475569;">تطوير التواصل الاجتماعي والمشاركة والتفكير المشترك لبناء علاقات فاعلة مع الآخرين.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div style="display:flex; justify-content:space-around; flex-wrap:wrap; max-width:1000px; margin:0 auto; text-align:right;">
+      <div style="margin:10px;">
+        <h4 style="color:white; margin-bottom:5px;">📍 فرع بنغازي</h4>
+        <p>الحدائق – بجوار مدرسة عبد الرازق الشيخي</p>
+        <p style="color:#4ade80;">هاتف / واتساب: 0913808229</p>
+      </div>
+      <div style="margin:10px;">
+        <h4 style="color:white; margin-bottom:5px;">📍 فرع البيضاء</h4>
+        <p>طريق الدائري بعد الجامعة الجديدة قبل شيل الدائري بجوار شركة القلعة</p>
+        <p style="color:#4ade80;">هاتف / واتساب: 0935003287</p>
+      </div>
+    </div>
+    <hr style="border-color:#334155; margin:20px 0;">
+    <p>جميع الحقوق محفوظة © 2026 مركز بداية للتخاطب وتأهيل ذوي الاحتياجات الخاصة</p>
+  </footer>
+
+  <div class="wa-float">
+    <button onclick="toggleWhatsappMenu()" class="wa-btn">💬</button>
+    <div id="wa-menu" class="wa-menu">
+      <p style="margin:0 0 10px; font-weight:bold; color:#333; font-size:13px;">اختر الفرع للتواصل عبر الواتساب:</p>
+      <a href="https://wa.me/218913808229?text=السلام%20عليكم%20استفسار%20عن%20فرع%20بنغازي" target="_blank" class="wa-link">📍 فرع بنغازي (0913808229)</a>
+      <a href="https://wa.me/218935003287?text=السلام%20عليكم%20استفسار%20عن%20فرع%20البيضاء" target="_blank" class="wa-link" style="background:#16a34a;">📍 فرع البيضاء (0935003287)</a>
+    </div>
+  </div>
+
+  <div class="social-float">
+    <a href="https://www.facebook.com/share/1HeFbDDUX3/" target="_blank" title="فيسبوك" class="social-btn fb">f</a>
+    <a href="https://www.instagram.com/beda.yacenter?stkn=c3Z1NzQyM2Zmdjcz" target="_blank" title="انستجرام" class="social-btn ig">ig</a>
+    <a href="/pages/branches.html" title="خرائط الفروع" class="social-btn map">📍</a>
+  </div>
+
+  <script>
+    function toggleWhatsappMenu() {
+      document.getElementById('wa-menu').classList.toggle('active');
+    }
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').then(r => console.log('PWA Registered')).catch(e => console.log(e));
+      });
+    }
+  </script>
+</body>
+</html>
+
+
